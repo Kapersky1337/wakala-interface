@@ -10,6 +10,13 @@ export const COLORS = {
   backgroundColor: "#E5E5E5",
   buttonGradient: ["rgba(183, 0, 76, 0.3)", "rgba(19, 63, 219, 1)"],
 
+  //pdm
+  inputFieldBorder: "rgba(195, 211, 212, 0.9)",
+  inputFieldBackgroundColor: "rgba(242, 242, 242, 0.4)",
+  inputFieldPlaceholder: "#9AA3AE",
+  lightBlue: '#C0FAEB',
+  warn: "#ba4848",
+
   // colors
   black: "#181725",
   textBlack: "#1C1939CC",
