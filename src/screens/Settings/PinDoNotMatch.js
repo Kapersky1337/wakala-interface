@@ -4,10 +4,10 @@ import { Ionicons } from '@expo/vector-icons';
 import { RFPercentage } from 'react-native-responsive-fontsize';
 
 //components
-import PinDoNotMatch from './../components/PinDoNotMatch';
+import ScreenPDM from '/src/components/ScreenPDM';
 
 //config
-import Colors from '../config/Colors';
+import Colors from '/src/config/Colors';
 
 function PinDoNotMatch(props) {
     const ref_input2 = useRef();

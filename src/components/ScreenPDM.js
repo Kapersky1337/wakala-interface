@@ -1,7 +1,7 @@
 import React from "react";
 import { Platform, SafeAreaView, StyleSheet, StatusBar } from "react-native";
 //config
-import Colors from "../config/Colors";
+import Colors from "/src/config/Colors";
 
 function ScreenPDM({ children, statusBarColor = Colors.white, style }) {
   return (
