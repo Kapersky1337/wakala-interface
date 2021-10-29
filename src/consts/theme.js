@@ -21,9 +21,11 @@ export const COLORS = {
   black: "#181725",
   textBlack: "#1C1939CC",
   white: "#FFFFFF",
+  darkBlue: '#4840BB',
   tertiary: "#7C7C7C",
   realBlack: "#000000",
   buttonGray: "#E6E6E6",
+  lightGrey: '#F3EBFC',
 
   //Menu
   homeMenu: "rgba(162, 197, 93, 0.15)",

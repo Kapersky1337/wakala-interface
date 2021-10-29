@@ -6,8 +6,9 @@ import { Ionicons } from '@expo/vector-icons';
 //components
 import Screen from './../components/Screen';
 //config
-import Colors from '../config/Colors';
+import theme from '../consts/theme';
 import { LinearGradient } from 'expo-linear-gradient';
+import { COLORS } from '../../consts/theme';
 
 function ContactSupportScreen(props) {
 
@@ -40,7 +41,7 @@ function ContactSupportScreen(props) {
                 {/* Nav */}
                 <View style={{ width: '80%', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', marginTop: RFPercentage(3) }}>
                     {/* Back Icon */}
-                    <Ionicons name="chevron-back" style={{ fontSize: RFPercentage(3.2) }} color={Colors.darkBlue} />
+                    <Ionicons name="chevron-back" style={{ fontSize: RFPercentage(3.2) }} color={COLORS.darkBlue} />
                 </View>
 
                 <ScrollView style={{ flex: 1, width: '100%' }} >
@@ -50,7 +51,7 @@ function ContactSupportScreen(props) {
                         <View style={{ marginTop: RFPercentage(7), flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', width: '80%' }}>
 
                             <Image style={{ width: RFPercentage(8), height: RFPercentage(8) }} source={require('../../assets/images/com.png')} />
-                            <Text style={{ marginLeft: RFPercentage(4.5), color: Colors.black, fontSize: RFPercentage(2.7), fontFamily: 'Rubik_500Medium' }}>
+                            <Text style={{ marginLeft: RFPercentage(4.5), color: COLORS.black, fontSize: RFPercentage(2.7), fontFamily: 'Rubik_500Medium' }}>
                                 Ask the Community
                             </Text>
                         </View>
@@ -61,7 +62,7 @@ function ContactSupportScreen(props) {
                                 <TouchableOpacity activeOpacity={0.8}>
                                     <Image style={{ width: RFPercentage(5), height: RFPercentage(5) }} source={item.imageSource} />
                                 </TouchableOpacity>
-                                <Text style={{ marginLeft: RFPercentage(4.5), color: Colors.darkBlue, fontSize: RFPercentage(2.5), fontFamily: 'Rubik_400Regular' }}>
+                                <Text style={{ marginLeft: RFPercentage(4.5), color: COLORS.darkBlue, fontSize: RFPercentage(2.5), fontFamily: 'Rubik_400Regular' }}>
                                     {item.title}
                                 </Text>
                             </View>
@@ -73,5 +74,6 @@ function ContactSupportScreen(props) {
         </Screen>
     );
 }
+
 
 export default ContactSupportScreen;

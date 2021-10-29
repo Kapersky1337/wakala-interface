@@ -1,9 +1,10 @@
 import React from "react";
 import { Platform, SafeAreaView, StyleSheet, StatusBar } from "react-native";
+import { COLORS } from "../consts/theme";
 //config
-import Colors from "/src/config/Colors";
+import theme from "/src/consts/theme";
 
-function ScreenPDM({ children, statusBarColor = Colors.white, style }) {
+function Screen({ children, statusBarColor = COLORS.white, style }) {
   return (
     <SafeAreaView style={[styles.screen, style]}>
       {Platform.OS === "android" ? <StatusBar backgroundColor={statusBarColor} barStyle="dark-content" /> : null}
@@ -18,4 +19,5 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ScreenPDM;
+
+export default Screen;
