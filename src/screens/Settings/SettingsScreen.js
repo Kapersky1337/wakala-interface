@@ -5,10 +5,6 @@ import { RFPercentage } from 'react-native-responsive-fontsize';
 //components
 import Screen from './../components/Screen';
 //config
-import theme from '../config/theme';
-import { Rubik_500Medium } from '@expo-google-fonts/rubik';
-import { Rubik_700Bold } from '@expo-google-fonts/rubik';
-import { Rubik_400Regular } from '@expo-google-fonts/rubik';
 import { COLORS } from '../../consts/theme';
 
 function SettingsScreen(props) {
