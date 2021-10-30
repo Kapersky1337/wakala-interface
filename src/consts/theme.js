@@ -25,6 +25,7 @@ export const COLORS = {
   tertiary: "#7C7C7C",
   realBlack: "#000000",
   buttonGray: "#E6E6E6",
+  line: '#444444',
   lightGrey: '#F3EBFC',
 
   //Menu
