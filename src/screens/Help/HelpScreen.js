@@ -4,14 +4,16 @@ import { RFPercentage } from 'react-native-responsive-fontsize';
 import { Ionicons } from '@expo/vector-icons';
 
 //components
-import Screen from './../components/Screen';
+import Screen from '/src/components/Screen';
 //config
-import heme from '../consts/theme';
+
 import { LinearGradient } from 'expo-linear-gradient';
 import { COLORS } from '../../consts/theme';
+import { SIZES } from '../consts/theme';
 
 
-const { height } = Dimensions.get("window");
+const { height } = SIZES.height;
+
 
 function HelpScreen(props) {
 
@@ -101,6 +103,7 @@ function HelpScreen(props) {
         </Screen>
     );
 }
+
 
 
 export default HelpScreen;

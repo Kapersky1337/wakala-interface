@@ -4,8 +4,8 @@ import { RFPercentage } from 'react-native-responsive-fontsize';
 import { Ionicons } from '@expo/vector-icons';
 
 //components
-import Screen from './../components/Screen';
-import MyAppButton from './../components/common/MyAppButton';
+import Screen from '/src/components/Screen';
+import MyAppButton from '/src/components/MyAppButton';
 import { LinearGradient } from 'expo-linear-gradient';
 
 //config
@@ -46,5 +46,6 @@ function PinSuccessScreen(props) {
         </Screen>
     );
 }
+
 
 export default PinSuccessScreen;

@@ -4,10 +4,10 @@ import { RFPercentage } from 'react-native-responsive-fontsize';
 import { Ionicons } from '@expo/vector-icons';
 
 //components
-import Screen from './../components/Screen';
+import Screen from '/src/components/Screen';
 //consts
-import theme from '../consts/theme';
-import MyAppButton from './../components/common/MyAppButton';
+import theme from '/src/consts/theme';
+import MyAppButton from '/src/components/MyAppButton';
 import { COLORS } from '../../consts/theme';
 
 function AccountAddress(props) {
@@ -31,7 +31,7 @@ function AccountAddress(props) {
                 <View style={{ width: "99%", justifyContent: 'flex-start', alignItems: 'center', backgroundColor: COLORS.lightGrey, height: RFPercentage(25.6), borderRadius: RFPercentage(3) }}>
                     <View style={{ width: '90%', marginTop: RFPercentage(7) }}>
                         <Text style={{ color: COLORS.black, fontSize: RFPercentage(2) }}>
-                            0x2C8A946E800719602DA0201BCEFD2423a81B6771
+                        0x2C8A946E800719602DA0201BCEFD2423a81B6771
                         </Text>
                     </View>
                 </View>
