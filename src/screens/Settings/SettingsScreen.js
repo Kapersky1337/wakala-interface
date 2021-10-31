@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, Image, ScrollView, Switch } from 'react-native'
+import { View, Text, Image, ScrollView, Switch, StyleSheet } from 'react-native'
 import { RFPercentage } from 'react-native-responsive-fontsize';
 
 //components
@@ -34,7 +34,7 @@ function SettingsScreen(props) {
                 <View style={{ justifyContent: 'center', alignItems: 'flex-start', width: '100%', marginTop: RFPercentage(1) }}>
 
                     <View style={{ width: '100%', height: RFPercentage(0.1), backgroundColor: COLORS.line, marginTop: RFPercentage(8) }} />
-                    <Text style={{ marginTop: RFPercentage(2.6), marginLeft: RFPercentage(6), color: COLORS.darkBlue, fontSize: RFPercentage(2.6), fontFamily: 'Rubik_400Regular' }}>
+                    <Text style={styles.button}>
                         Currency(Kash)
                     </Text>
                     <View style={{ width: '100%', height: RFPercentage(0.1), backgroundColor: COLORS.line, marginTop: RFPercentage(2.8) }} />
@@ -43,11 +43,11 @@ function SettingsScreen(props) {
                         Wallet
                     </Text>
                     <View style={{ width: '100%', height: RFPercentage(0.1), backgroundColor: COLORS.line, marginTop: RFPercentage(2) }} />
-                    <Text style={{ marginTop: RFPercentage(2.6), marginLeft: RFPercentage(6), color: COLORS.darkBlue, fontSize: RFPercentage(2.6), fontFamily: 'Rubik_400Regular' }}>
+                    <Text style={styles.button}>
                         Account Address
                     </Text>
                     <View style={{ width: '100%', height: RFPercentage(0.1), backgroundColor: COLORS.line, marginTop: RFPercentage(2.8) }} />
-                    <Text style={{ marginTop: RFPercentage(2.6), marginLeft: RFPercentage(6), color: COLORS.darkBlue, fontSize: RFPercentage(2.6), fontFamily: 'Rubik_400Regular' }}>
+                    <Text style={styles.button}>
                         Recovery Phrase
                     </Text>
                     <View style={{ width: '100%', height: RFPercentage(0.1), backgroundColor: COLORS.line, marginTop: RFPercentage(2.8) }} />
@@ -56,12 +56,12 @@ function SettingsScreen(props) {
                         Security and Data
                     </Text>
                     <View style={{ width: '100%', height: RFPercentage(0.1), backgroundColor: COLORS.line, marginTop: RFPercentage(2.4) }} />
-                    <Text style={{ marginTop: RFPercentage(2.6), marginLeft: RFPercentage(6), color: COLORS.darkBlue, fontSize: RFPercentage(2.6), fontFamily: 'Rubik_400Regular' }}>
+                    <Text style={styles.button}>
                         Change Pin
                     </Text>
                     <View style={{ width: '100%', height: RFPercentage(0.1), backgroundColor: COLORS.line, marginTop: RFPercentage(2.8) }} />
                     <View style={{ width: '100%', justifyContent: 'flex-start', alignItems: 'center', flexDirection: 'row' }}>
-                        <Text style={{ marginTop: RFPercentage(2.6), marginLeft: RFPercentage(6), color: COLORS.darkBlue, fontSize: RFPercentage(2.6), fontFamily: 'Rubik_400Regular' }}>
+                        <Text style={styles.button}>
                             Require PIN on App Open
                         </Text>
                         <View style={{ position: 'absolute', right: RFPercentage(2), top: RFPercentage(2) }}>
@@ -76,7 +76,7 @@ function SettingsScreen(props) {
                     </View>
                     <View style={{ width: '100%', height: RFPercentage(0.08), backgroundColor: COLORS.line, marginTop: RFPercentage(2.8) }} />
                     <View style={{ width: '100%', justifyContent: 'flex-start', alignItems: 'center', flexDirection: 'row' }}>
-                        <Text style={{ marginTop: RFPercentage(2.6), marginLeft: RFPercentage(6), color: COLORS.darkBlue, fontSize: RFPercentage(2.6), fontFamily: 'Rubik_400Regular' }}>
+                        <Text style={styles.button}>
                             Share Analytics
                         </Text>
                         <View style={{ position: 'absolute', right: RFPercentage(2), top: RFPercentage(2) }}>
@@ -94,15 +94,15 @@ function SettingsScreen(props) {
                         Legal
                     </Text>
                     <View style={{ width: '100%', height: RFPercentage(0.08), backgroundColor: COLORS.line, marginTop: RFPercentage(2) }} />
-                    <Text style={{ marginTop: RFPercentage(2.6), marginLeft: RFPercentage(6), color: COLORS.darkBlue, fontSize: RFPercentage(2.6), fontFamily: 'Rubik_400Regular' }}>
+                    <Text style={styles.button}>
                         Licenses
                     </Text>
                     <View style={{ width: '100%', height: RFPercentage(0.08), backgroundColor: COLORS.line, marginTop: RFPercentage(2.8) }} />
-                    <Text style={{ marginTop: RFPercentage(2.6), marginLeft: RFPercentage(6), color: COLORS.darkBlue, fontSize: RFPercentage(2.6), fontFamily: 'Rubik_400Regular' }}>
+                    <Text style={styles.button}>
                         Terms of service
                     </Text>
                     <View style={{ width: '100%', height: RFPercentage(0.08), backgroundColor: COLORS.line, marginTop: RFPercentage(2.8) }} />
-                    <Text style={{ marginTop: RFPercentage(2.6), marginLeft: RFPercentage(6), color: COLORS.darkBlue, fontSize: RFPercentage(2.6), fontFamily: 'Rubik_400Regular' }}>
+                    <Text style={styles.button}>
                         Privacy Policy
                     </Text>
                     <View style={{ width: '100%', height: RFPercentage(0.1), backgroundColor: COLORS.line, marginTop: RFPercentage(2.8) }} />
@@ -125,3 +125,28 @@ function SettingsScreen(props) {
 }
 
 export default SettingsScreen;
+
+
+const styles = StyleSheet.create({
+
+button: {
+    marginTop: RFPercentage(2.6),
+    marginLeft: RFPercentage(6),
+    color: COLORS.darkBlue,
+    fontSize: RFPercentage(2.6), 
+    fontFamily: 'Rubik_400Regular'
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+});

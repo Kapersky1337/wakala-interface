@@ -38,16 +38,16 @@ function HelpScreen(props) {
     ]
 
     return (
-        <Screen statusBarColor="#E5E5E5" style={{ flex: 1, justifyContent: 'flex-start', alignItems: "center", backgroundColor: "#E5E5E5" }}>
+        <Screen statusBarColor="#E5E5E5" style={styles.status}>
 
             {/* Nav */}
-            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: RFPercentage(3) }}>
+            <View style={styles.nav}>
 
                 {/* Menue Icon */}
-                <Image style={{ width: RFPercentage(5.8), height: RFPercentage(5.8), position: 'absolute', left: RFPercentage(2) }} sty source={require('../../assets/images/menue.png')} />
+                <Image style={styles.menu} sty source={require('../../assets/images/menue.png')} />
 
                 {/* Heading */}
-                <Text style={{ color: "#333333", fontSize: RFPercentage(2.5), fontFamily: 'Rubik_500Medium' }}>
+                <Text style={styles.heading}>
                     Help
                 </Text>
             </View>
@@ -69,7 +69,7 @@ function HelpScreen(props) {
 
             {/* Model */}
             <Modal visible={pickerModel} transparent={true} >
-                <View style={{ justifyContent: "center", flex: 1, height: height, width: "100%", backgroundColor: "rgba(0, 0, 0, 0)" }} >
+                <View style={styles.model} >
 
 
                     <LinearGradient colors={['#F7EFFA', '#FCF8ED']} start={[1, 1]} end={[1, 0.2]} style={{ alignSelf: 'center', alignItems: "center", justifyContent: 'center', borderRadius: RFPercentage(3), width: "80%", height: RFPercentage(45) }} >
@@ -107,3 +107,47 @@ function HelpScreen(props) {
 
 
 export default HelpScreen;
+
+const styles = StyleSheet.create({
+
+    status: {
+    flex: 1, 
+    justifyContent: 'flex-start', 
+    alignItems: "center", 
+    backgroundColor: "#E5E5E5"
+    
+    },
+    
+    model: {
+      justifyContent: "center", 
+      flex: 1, 
+      height: height,
+       width: "100%", 
+       backgroundColor: "rgba(0, 0, 0, 0)" 
+    },
+    
+    heading: {
+        color: "#333333",
+        fontSize: RFPercentage(2.5), 
+        fontFamily: 'Rubik_500Medium'
+        
+        },
+    
+    nav: {
+        width: '100%', 
+        flexDirection: 'row', 
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        marginTop: RFPercentage(3)
+    },
+        
+    menu: {
+        width: RFPercentage(5.8), 
+        height: RFPercentage(5.8), 
+        position: 'absolute', 
+        left: RFPercentage(2) 
+
+    }
+    
+    
+    });

@@ -83,38 +83,38 @@ function PinDoNotMatch(props) {
             </View>
             <View style={{ flexDirection: 'row', marginTop: RFPercentage(2) }}>
                 {/* First input */}
-                <View style={{ marginTop: RFPercentage(2), marginRight: RFPercentage(1.3), alignItems: "center", justifyContent: "center", flexDirection: "row", width: RFPercentage(6), height: RFPercentage(6.9), marginVertical: RFPercentage(0.7), borderRadius: RFPercentage(1) }} >
-                    <Text style={{ color: warn ? 'red' : COLORS.black, fontSize: RFPercentage(5) }}>
+                <View style={styles.input} >
+                    <Text style={styles.textinp}>
                         {(value[0] === "" || value[0] === undefined) ? "" : "*"}
                     </Text>
                 </View>
                 {/* second input */}
-                <View style={{ marginTop: RFPercentage(2), marginRight: RFPercentage(1.3), alignItems: "center", justifyContent: "center", flexDirection: "row", width: RFPercentage(6), height: RFPercentage(6.9), marginVertical: RFPercentage(0.7), borderRadius: RFPercentage(1) }} >
-                    <Text style={{ color: warn ? 'red' : COLORS.black, fontSize: RFPercentage(5) }}>
+                <View style={styles.input} >
+                    <Text style={styles.textinp}>
                         {(value[1] === "" || value[1] === undefined) ? "" : "*"}
                     </Text>
                 </View>
                 {/* third input */}
-                <View style={{ marginTop: RFPercentage(2), marginRight: RFPercentage(1.3), alignItems: "center", justifyContent: "center", flexDirection: "row", width: RFPercentage(6), height: RFPercentage(6.9), marginVertical: RFPercentage(0.7), borderRadius: RFPercentage(1) }} >
-                    <Text style={{ color: warn ? 'red' : COLORS.black, fontSize: RFPercentage(5) }}>
+                <View style={styles.input} >
+                    <Text style={styles.textinp}>
                         {(value[2] === "" || value[2] === undefined) ? "" : "*"}
                     </Text>
                 </View>
                 {/* fourth input */}
-                <View style={{ marginTop: RFPercentage(2), marginRight: RFPercentage(1.3), alignItems: "center", justifyContent: "center", flexDirection: "row", width: RFPercentage(6), height: RFPercentage(6.9), marginVertical: RFPercentage(0.7), borderRadius: RFPercentage(1) }} >
-                    <Text style={{ color: warn ? 'red' : COLORS.black, fontSize: RFPercentage(5) }}>
+                <View style={styles.input} >
+                    <Text style={styles.textinp}>
                         {(value[3] === "" || value[3] === undefined) ? "" : "*"}
                     </Text>
                 </View>
                 {/* fifth input */}
-                <View style={{ marginTop: RFPercentage(2), marginRight: RFPercentage(1.3), alignItems: "center", justifyContent: "center", flexDirection: "row", width: RFPercentage(6), height: RFPercentage(6.9), marginVertical: RFPercentage(0.7), borderRadius: RFPercentage(1) }} >
-                    <Text style={{ color: warn ? 'red' : COLORS.black, fontSize: RFPercentage(5) }}>
+                <View style={styles.input} >
+                    <Text style={styles.textinp}>
                         {(value[4] === "" || value[4] === undefined) ? "" : "*"}
                     </Text>
                 </View>
                 {/* sixth input */}
-                <View style={{ marginTop: RFPercentage(2), marginRight: RFPercentage(1.3), alignItems: "center", justifyContent: "center", flexDirection: "row", width: RFPercentage(6), height: RFPercentage(6.9), marginVertical: RFPercentage(0.7), borderRadius: RFPercentage(1) }} >
-                    <Text style={{ color: warn ? 'red' : COLORS.black, fontSize: RFPercentage(5) }}>
+                <View style={styles.input} >
+                    <Text style={styles.textinp}>
                         {(value[5] === "" || value[5] === undefined) ? "" : "*"}
                     </Text>
                 </View>
@@ -126,17 +126,17 @@ function PinDoNotMatch(props) {
                 {/* First row */}
                 <View style={{ marginTop: RFPercentage(6), width: '80%', flexDirection: 'row', alignSelf: 'center', justifyContent: 'center', alignItems: 'center' }}>
                     <TouchableOpacity style={{ position: 'absolute', left: 0 }} >
-                        <Text onPress={() => handleChange('1')} style={{ fontFamily: 'DMSans_700Bold', color: COLORS.keypad, fontSize: RFPercentage(3.4) }}>
+                        <Text onPress={() => handleChange('1')} style={styles.keypad}>
                             1
                         </Text>
                     </TouchableOpacity>
                     <TouchableOpacity >
-                        <Text onPress={() => handleChange('2')} style={{ fontFamily: 'DMSans_700Bold', color: COLORS.keypad, fontSize: RFPercentage(3.4) }}>
+                        <Text onPress={() => handleChange('2')} style={styles.keypad}>
                             2
                         </Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={{ position: 'absolute', right: 0 }}>
-                        <Text onPress={() => handleChange('3')} style={{ fontFamily: 'DMSans_700Bold', color: COLORS.keypad, fontSize: RFPercentage(3.4) }}>
+                        <Text onPress={() => handleChange('3')} style={styles.keypad}>
                             3
                         </Text>
                     </TouchableOpacity>
@@ -145,17 +145,17 @@ function PinDoNotMatch(props) {
                 {/* second row */}
                 <View style={{ marginTop: RFPercentage(6), width: '80%', flexDirection: 'row', alignSelf: 'center', justifyContent: 'center', alignItems: 'center' }}>
                     <TouchableOpacity style={{ position: 'absolute', left: 0 }} >
-                        <Text onPress={() => handleChange('4')} style={{ fontFamily: 'DMSans_700Bold', color: COLORS.keypad, fontSize: RFPercentage(3.4) }}>
+                        <Text onPress={() => handleChange('4')} style={styles.keypad}>
                             4
                         </Text>
                     </TouchableOpacity>
                     <TouchableOpacity >
-                        <Text onPress={() => handleChange('5')} style={{ fontFamily: 'DMSans_700Bold', color: COLORS.keypad, fontSize: RFPercentage(3.4) }}>
+                        <Text onPress={() => handleChange('5')} style={styles.keypad}>
                             5
                         </Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={{ position: 'absolute', right: 0 }} >
-                        <Text onPress={() => handleChange('6')} style={{ fontFamily: 'DMSans_700Bold', color: COLORS.keypad, fontSize: RFPercentage(3.4) }}>
+                        <Text onPress={() => handleChange('6')} style={styles.keypad}>
                             6
                         </Text>
                     </TouchableOpacity>
@@ -164,17 +164,17 @@ function PinDoNotMatch(props) {
                 {/* third row */}
                 <View style={{ marginTop: RFPercentage(6), width: '80%', flexDirection: 'row', alignSelf: 'center', justifyContent: 'center', alignItems: 'center' }}>
                     <TouchableOpacity style={{ position: 'absolute', left: 0 }} >
-                        <Text onPress={() => handleChange('7')} style={{ fontFamily: 'DMSans_700Bold', color: COLORS.keypad, fontSize: RFPercentage(3.4) }}>
+                        <Text onPress={() => handleChange('7')} style={styles.keypad}>
                             7
                         </Text>
                     </TouchableOpacity>
                     <TouchableOpacity >
-                        <Text onPress={() => handleChange('8')} style={{ fontFamily: 'DMSans_700Bold', color: COLORS.keypad, fontSize: RFPercentage(3.4) }}>
+                        <Text onPress={() => handleChange('8')} style={styles.keypad}>
                             8
                         </Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={{ position: 'absolute', right: 0 }} >
-                        <Text onPress={() => handleChange('9')} style={{ fontFamily: 'DMSans_700Bold', color: COLORS.keypad, fontSize: RFPercentage(3.4) }}>
+                        <Text onPress={() => handleChange('9')} style={styles.keypad}>
                             9
                         </Text>
                     </TouchableOpacity>
@@ -189,7 +189,7 @@ function PinDoNotMatch(props) {
                         </Text>
                     </TouchableOpacity>
                     <TouchableOpacity  >
-                        <Text onPress={() => handleChange('0')} style={{ fontFamily: 'DMSans_700Bold', color: COLORS.keypad, fontSize: RFPercentage(3.4) }}>
+                        <Text onPress={() => handleChange('0')} style={styles.keypad}>
                             0
                         </Text>
                     </TouchableOpacity>
@@ -204,3 +204,40 @@ function PinDoNotMatch(props) {
 
 
 export default PinDoNotMatch;
+
+const styles = StyleSheet.create({
+
+input: {
+    marginTop: RFPercentage(2), 
+    marginRight: RFPercentage(1.3),
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "row",
+    width: RFPercentage(6),
+    height: RFPercentage(6.9),
+    marginVertical: RFPercentage(0.7),
+    borderRadius: RFPercentage(1)
+},
+
+textinp: {
+    color: warn ? 'red' : COLORS.black, 
+    fontSize: RFPercentage(5)
+
+},
+
+keypad: {
+    fontFamily: 'DMSans_700Bold',
+    color: COLORS.keypad, 
+    fontSize: RFPercentage(3.4)
+}
+
+
+
+
+
+
+
+
+
+
+});
