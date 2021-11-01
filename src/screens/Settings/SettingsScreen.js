@@ -37,7 +37,7 @@ function SettingsScreen(props) {
                     <Text style={styles.button}>
                         Currency(Kash)
                     </Text>
-                    <View style={{ width: '100%', height: RFPercentage(0.1), backgroundColor: COLORS.line, marginTop: RFPercentage(2.8) }} />
+                    <View style={styles.text1} />
 
                     <Text style={{ marginTop: RFPercentage(5), marginLeft: RFPercentage(6), color: COLORS.darkBlue, fontSize: RFPercentage(2.6), fontFamily: 'Rubik_700Bold' }}>
                         Wallet
@@ -46,11 +46,11 @@ function SettingsScreen(props) {
                     <Text style={styles.button}>
                         Account Address
                     </Text>
-                    <View style={{ width: '100%', height: RFPercentage(0.1), backgroundColor: COLORS.line, marginTop: RFPercentage(2.8) }} />
+                    <View style={styles.text1} />
                     <Text style={styles.button}>
                         Recovery Phrase
                     </Text>
-                    <View style={{ width: '100%', height: RFPercentage(0.1), backgroundColor: COLORS.line, marginTop: RFPercentage(2.8) }} />
+                    <View style={styles.text1} />
 
                     <Text style={{ marginTop: RFPercentage(10), marginLeft: RFPercentage(6), color: COLORS.darkBlue, fontSize: RFPercentage(2.6), fontFamily: 'Rubik_700Bold' }}>
                         Security and Data
@@ -59,12 +59,12 @@ function SettingsScreen(props) {
                     <Text style={styles.button}>
                         Change Pin
                     </Text>
-                    <View style={{ width: '100%', height: RFPercentage(0.1), backgroundColor: COLORS.line, marginTop: RFPercentage(2.8) }} />
-                    <View style={{ width: '100%', justifyContent: 'flex-start', alignItems: 'center', flexDirection: 'row' }}>
+                    <View style={styles.text1} />
+                    <View style={styles.settings1}>
                         <Text style={styles.button}>
                             Require PIN on App Open
                         </Text>
-                        <View style={{ position: 'absolute', right: RFPercentage(2), top: RFPercentage(2) }}>
+                        <View style={styles.settings}>
                             <Switch
                                 trackColor={{ false: "#D0D0D0", true: COLORS.darkBlue }}
                                 thumbColor={isEnabled ? COLORS.white : COLORS.lightGrey}
@@ -74,12 +74,12 @@ function SettingsScreen(props) {
                             />
                         </View>
                     </View>
-                    <View style={{ width: '100%', height: RFPercentage(0.08), backgroundColor: COLORS.line, marginTop: RFPercentage(2.8) }} />
-                    <View style={{ width: '100%', justifyContent: 'flex-start', alignItems: 'center', flexDirection: 'row' }}>
+                    <View style={styles.text} />
+                    <View style={styles.settings1}>
                         <Text style={styles.button}>
                             Share Analytics
                         </Text>
-                        <View style={{ position: 'absolute', right: RFPercentage(2), top: RFPercentage(2) }}>
+                        <View style={styles.settings}>
                             <Switch
                                 trackColor={{ false: "#D0D0D0", true: COLORS.darkBlue }}
                                 thumbColor={isEnabled2 ? COLORS.white : COLORS.lightGrey}
@@ -97,15 +97,15 @@ function SettingsScreen(props) {
                     <Text style={styles.button}>
                         Licenses
                     </Text>
-                    <View style={{ width: '100%', height: RFPercentage(0.08), backgroundColor: COLORS.line, marginTop: RFPercentage(2.8) }} />
+                    <View style={styles.text} />
                     <Text style={styles.button}>
                         Terms of service
                     </Text>
-                    <View style={{ width: '100%', height: RFPercentage(0.08), backgroundColor: COLORS.line, marginTop: RFPercentage(2.8) }} />
+                    <View style={styles.text} />
                     <Text style={styles.button}>
                         Privacy Policy
                     </Text>
-                    <View style={{ width: '100%', height: RFPercentage(0.1), backgroundColor: COLORS.line, marginTop: RFPercentage(2.8) }} />
+                    <View style={styles.text1} />
 
                     <Text style={{ marginTop: RFPercentage(6), marginLeft: RFPercentage(6), color: COLORS.darkBlue, fontSize: RFPercentage(2.6), fontFamily: 'Rubik_400Regular' }}>
                         Reset Wakala
@@ -135,12 +135,38 @@ button: {
     color: COLORS.darkBlue,
     fontSize: RFPercentage(2.6), 
     fontFamily: 'Rubik_400Regular'
+},
+
+text:{
+    width: '100%',
+    height: RFPercentage(0.08), 
+    backgroundColor: COLORS.line, 
+    marginTop: RFPercentage(2.8)
+
+},
+
+text1: {
+    width: '100%',
+    height: RFPercentage(0.1), 
+    backgroundColor: COLORS.line, 
+    marginTop: RFPercentage(2.8)
+
+},
+
+settings:{
+    position: 'absolute', 
+    right: RFPercentage(2), 
+    top: RFPercentage(2)
+
+},
+
+settings1:{
+    width: '100%', 
+    justifyContent: 'flex-start', 
+    alignItems: 'center', 
+    flexDirection: 'row'
+
 }
-
-
-
-
-
 
 
 

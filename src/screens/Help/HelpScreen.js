@@ -80,10 +80,10 @@ function HelpScreen(props) {
                             </Text>
                         </View>
                         <View style={{ width: '80%', justifyContent: 'center', alignItems: 'center' }}>
-                            <Text style={{ marginTop: RFPercentage(3), fontFamily: 'Rubik_400Regular', fontSize: RFPercentage(2.2) }}>
+                            <Text style={styles.text}>
                                 Stay put. You will soon be able to
                             </Text>
-                            <Text style={{ marginTop: RFPercentage(1), fontFamily: 'Rubik_400Regular', fontSize: RFPercentage(2.2) }}>
+                            <Text style={styles.text}>
                                 increase your account limit
                             </Text>
                         </View>
@@ -147,7 +147,13 @@ const styles = StyleSheet.create({
         position: 'absolute', 
         left: RFPercentage(2) 
 
-    }
+    },
     
+    text: {
+        marginTop: RFPercentage(3),
+        fontFamily: 'Rubik_400Regular', 
+        fontSize: RFPercentage(2.2)
+
+    }
     
     });

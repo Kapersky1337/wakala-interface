@@ -124,7 +124,7 @@ function PinDoNotMatch(props) {
             <View style={{ width: '100%', height: RFPercentage(53), position: 'absolute', bottom: 0, backgroundColor: COLORS.white }}>
 
                 {/* First row */}
-                <View style={{ marginTop: RFPercentage(6), width: '80%', flexDirection: 'row', alignSelf: 'center', justifyContent: 'center', alignItems: 'center' }}>
+                <View style={styles.rowst}>
                     <TouchableOpacity style={{ position: 'absolute', left: 0 }} >
                         <Text onPress={() => handleChange('1')} style={styles.keypad}>
                             1
@@ -143,7 +143,7 @@ function PinDoNotMatch(props) {
                 </View>
 
                 {/* second row */}
-                <View style={{ marginTop: RFPercentage(6), width: '80%', flexDirection: 'row', alignSelf: 'center', justifyContent: 'center', alignItems: 'center' }}>
+                <View style={styles.rowst}>
                     <TouchableOpacity style={{ position: 'absolute', left: 0 }} >
                         <Text onPress={() => handleChange('4')} style={styles.keypad}>
                             4
@@ -162,7 +162,7 @@ function PinDoNotMatch(props) {
                 </View>
 
                 {/* third row */}
-                <View style={{ marginTop: RFPercentage(6), width: '80%', flexDirection: 'row', alignSelf: 'center', justifyContent: 'center', alignItems: 'center' }}>
+                <View style={styles.rowst}>
                     <TouchableOpacity style={{ position: 'absolute', left: 0 }} >
                         <Text onPress={() => handleChange('7')} style={styles.keypad}>
                             7
@@ -181,7 +181,7 @@ function PinDoNotMatch(props) {
                 </View>
 
                 {/* Fourth  row*/}
-                <View style={{ marginTop: RFPercentage(6), width: '80%', flexDirection: 'row', alignSelf: 'center', justifyContent: 'center', alignItems: 'center' }}>
+                <View style={styles.rowst}>
                     <TouchableOpacity style={{ position: 'absolute', left: 0 }}  >
                         {/* Dummy entry */}
                         <Text style={{ color: COLORS.white, fontSize: RFPercentage(3.4) }}>
@@ -229,9 +229,17 @@ keypad: {
     fontFamily: 'DMSans_700Bold',
     color: COLORS.keypad, 
     fontSize: RFPercentage(3.4)
+},
+
+rowst: {
+    marginTop: RFPercentage(6), 
+    width: '80%', 
+    flexDirection: 'row', 
+    alignSelf: 'center', 
+    justifyContent: 'center', 
+    alignItems: 'center'
+
 }
-
-
 
 
 
