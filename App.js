@@ -25,8 +25,16 @@ import { COLORS, SIZES } from "./src/consts/theme";
 import VerifyNumber from "./src/screens/Auth/VerifyNumber";
 import ToC from "./src/screens/Auth/ToC";
 import AccountAddress from "./src/screens/Settings/AccountAddress";
-import PinDoNotMatch from "./src/screens/Settings/AccountAddress";
+import PinDoNotMatch from "./src/screens/Settings/PinDoNotMatch";
 import ContactSupportScreen from "./src/screens/Help/ContactSupportScreen";
+import PinSuccessScreen from "./src/screens/Settings/PinSuccessScreen";
+import RecoveryPhrase from "./src/screens/Settings/RecoveryPhrase";
+import SettingsScreen from "./src/screens/Settings/SettingsScreen";
+import HelpScreen from "./src/screens/Help/HelpScreen";
+import ResetAccountScreen from "./src/screens/Settings/ResetAccountScreen";
+import SelectCurrencyScreen from "./src/screens/Settings/SelectCurrencyScreen";
+import ContactScreen from "./src/screens/Help/ContactScreen";
+
 
 const RootStack = createStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -78,6 +86,35 @@ const Home = () => {
         component={ContactSupportScreen}
         // options={{ headerShown: false }}
       />
+      <Drawer.Screen
+      name="PinSuccess"
+      component={PinSuccessScreen}
+      />
+      <Drawer.Screen
+      name="RecoveryPhrase"
+      component={RecoveryPhrase}
+      />
+      <Drawer.Screen
+      name="Settings"
+      component={SettingsScreen}
+      />
+      <Drawer.Screen
+      name="Help Screen"
+      component={HelpScreen}
+      />
+      <Drawer.Screen
+      name="Contact"
+      component={ContactScreen}
+      />
+      <Drawer.Screen
+      name="Reset Account"
+      component={ResetAccountScreen}
+      />
+      <Drawer.Screen
+      name="Select Currency"
+      component={SelectCurrencyScreen}
+      />
+
     </Drawer.Navigator>
   );
 };

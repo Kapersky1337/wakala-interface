@@ -9,7 +9,7 @@ import Screen from "../../components/Screen";
 
 //config
 import theme from '../../consts/theme';
-import { COLORS } from "";
+import { COLORS } from "../../consts/theme";
 
 function PinDoNotMatch(props) {
     const refInput2 = useRef();
@@ -219,7 +219,7 @@ input: {
 },
 
 textinp: {
-    color: warn ? 'red' : COLORS.black, 
+    color: COLORS.warn ? 'red' : COLORS.black, 
     fontSize: RFPercentage(5)
 
 },

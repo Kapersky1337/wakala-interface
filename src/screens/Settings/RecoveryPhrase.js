@@ -4,10 +4,9 @@ import { RFPercentage } from 'react-native-responsive-fontsize';
 import { Ionicons } from '@expo/vector-icons';
 
 //components
-import Screen from '/src/components/Screen';
+import Screen from '../../components/Screen';
 //consts
-import theme from '/src/consts/theme';
-import MyAppButton from '/src/components/MyAppButton';
+import MyAppButton from '../../components/MyAppButton';
 import { COLORS } from '../../consts/theme';
 
 function RecoveryPhrase(props) {

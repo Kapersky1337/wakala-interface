@@ -3,7 +3,7 @@ import { View, Text, Image, ScrollView, Switch, StyleSheet } from 'react-native'
 import { RFPercentage } from 'react-native-responsive-fontsize';
 
 //components
-import Screen from '/src/components/Screen';
+import Screen from '../../components/Screen';
 //config
 import { COLORS } from '../../consts/theme';
 
