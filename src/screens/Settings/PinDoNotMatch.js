@@ -4,11 +4,12 @@ import { Ionicons } from '@expo/vector-icons';
 import { RFPercentage } from 'react-native-responsive-fontsize';
 
 //components
-import Screen from '/src/components/Screen';
+import Screen from "../../components/Screen";
+
 
 //config
-import theme from '/src/consts/theme';
-import { COLORS } from '../../consts/theme';
+import theme from '../../consts/theme';
+import { COLORS } from "";
 
 function PinDoNotMatch(props) {
     const refInput2 = useRef();
@@ -203,8 +204,6 @@ function PinDoNotMatch(props) {
 }
 
 
-export default PinDoNotMatch;
-
 const styles = StyleSheet.create({
 
 input: {
@@ -249,3 +248,5 @@ rowst: {
 
 
 });
+
+export default PinDoNotMatch;
