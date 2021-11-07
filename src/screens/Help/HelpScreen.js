@@ -81,10 +81,7 @@ function HelpScreen(props) {
                         </View>
                         <View style={{ width: '80%', justifyContent: 'center', alignItems: 'center' }}>
                             <Text style={styles.text}>
-                                Stay put. You will soon be able to
-                            </Text>
-                            <Text style={styles.text}>
-                                increase your account limit
+                                Stay put. You will soon be able to increase your account limit
                             </Text>
                         </View>
 

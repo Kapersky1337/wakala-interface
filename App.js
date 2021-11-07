@@ -78,16 +78,6 @@ const Home = () => {
         options={{ headerShown: false }}
       />
       <Drawer.Screen
-        name="Account Address"
-        component={AccountAddress}
-        options={{ headerShown: false }}
-      />
-      <Drawer.Screen
-        name="Pin"
-        component={PinDoNotMatch}
-        options={{ headerShown: false }}
-      />
-      <Drawer.Screen
         name="Support"
         component={ContactSupportScreen}
         // options={{ headerShown: false }}
@@ -95,11 +85,6 @@ const Home = () => {
       <Drawer.Screen
       name="PinSuccess"
       component={PinSuccessScreen}
-      options={{ headerShown: false }}
-      />
-      <Drawer.Screen
-      name="RecoveryPhrase"
-      component={RecoveryPhrase}
       options={{ headerShown: false }}
       />
       <Drawer.Screen
@@ -115,11 +100,6 @@ const Home = () => {
       <Drawer.Screen
       name="Contact"
       component={ContactScreen}
-      options={{ headerShown: false }}
-      />
-      <Drawer.Screen
-      name="ResetAccount"
-      component={ResetAccountScreen}
       options={{ headerShown: false }}
       />
       <Drawer.Screen
@@ -160,7 +140,8 @@ const App = () => {
     return (
       <NavigationContainer>
         <RootStack.Navigator screenOptions={{ headerShown: false }}>
-          <RootStack.Screen name="Landing" component={SettingsScreen} />
+          <RootStack.Screen name="Landing" component={OnboardingScreen} />
+          
           <RootStack.Screen name="Signup">
             {(props) => <SignUpScreen {...props} onSignIn={handleSignIn} />}
           </RootStack.Screen>
@@ -188,6 +169,27 @@ const App = () => {
             component={AddFunds}
             options={{ headerShown: false }}
           />
+          <RootStack.Screen
+            name="RecoveryPhrase"
+            component={RecoveryPhrase}
+            options={{ headerShown: false }}
+          />
+          <RootStack.Screen
+            name="PinDoNotMatch"
+            component={PinDoNotMatch}
+            options={{ headerShown: false }}
+          />
+          <RootStack.Screen
+            name="Account Address"
+            component={AccountAddress}
+            options={{ headerShown: false }}
+          />
+          <RootStack.Screen
+             name="ResetAccount"
+             component={ResetAccountScreen}
+             options={{ headerShown: false }}
+          />
+
           <RootStack.Screen
             name="Confirm Funds"
             component={ConfirmFunds}

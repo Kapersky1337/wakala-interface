@@ -54,6 +54,7 @@ function PinDoNotMatch(props) {
 
   const handleLastValue = (text) => {
     setValue6(text);
+  
 
     if (value1 && value2 && value3 && value4 && value5 && text) {
       showWarn(true);
@@ -61,6 +62,7 @@ function PinDoNotMatch(props) {
     } else {
       showWarn(false);
     }
+}
 
   return (
     <Screen
@@ -247,7 +249,7 @@ function PinDoNotMatch(props) {
       </View>
     </Screen>
   );  
-    }
+    
 }
 
 const styles = StyleSheet.create({

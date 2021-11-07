@@ -35,7 +35,7 @@ function SettingsScreen(props) {
                 <View style={{ justifyContent: 'center', alignItems: 'flex-start', width: '100%', marginTop: RFPercentage(1) }}>
 
                     <View style={{ width: '100%', height: RFPercentage(0.1), backgroundColor: COLORS.line, marginTop: RFPercentage(8) }} />
-                    <TouchableOpacity activeOpacity={0.6} onPress={() => props.navigation.navigate("SelectCurrencyScreen")} >
+                    <TouchableOpacity activeOpacity={0.6} onPress={() => props.navigation.navigate("SelectCurrency")} >
                     <Text style={styles.button}>
                         Currency(Kash)
                     </Text>
@@ -60,7 +60,7 @@ function SettingsScreen(props) {
                         Security and Data
                     </Text>
                     <View style={{ width: '100%', height: RFPercentage(0.1), backgroundColor: COLORS.line, marginTop: RFPercentage(2.4) }} />
-                    <TouchableOpacity activeOpacity={0.6} onPress={() => props.navigation.navigate("Pin")} >
+                    <TouchableOpacity activeOpacity={0.6} onPress={() => props.navigation.navigate("PinDoNotMatch")} >
                     <Text style={styles.button}>
                         Change Pin
                     </Text>
@@ -112,7 +112,7 @@ function SettingsScreen(props) {
                         Privacy Policy
                     </Text>
                     <View style={styles.text1} />
-                    <TouchableOpacity activeOpacity={0.6} onPress={() => props.navigation.navigate("ResetAccountScreen")} >
+                    <TouchableOpacity activeOpacity={0.6} onPress={() => props.navigation.navigate("ResetAccount")} >
                     <Text style={{ marginTop: RFPercentage(6), marginLeft: RFPercentage(6), color: COLORS.darkBlue, fontSize: RFPercentage(2.6), fontFamily: 'Rubik_400Regular' }}>
                         Reset Wakala
                     </Text>
