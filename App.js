@@ -89,30 +89,37 @@ const Home = () => {
       <Drawer.Screen
       name="PinSuccess"
       component={PinSuccessScreen}
+      options={{ headerShown: false }}
       />
       <Drawer.Screen
       name="RecoveryPhrase"
       component={RecoveryPhrase}
+      options={{ headerShown: false }}
       />
       <Drawer.Screen
       name="Settings"
       component={SettingsScreen}
+      options={{ headerShown: false }}
       />
       <Drawer.Screen
       name="Help Screen"
       component={HelpScreen}
+      options={{ headerShown: false }}
       />
       <Drawer.Screen
       name="Contact"
       component={ContactScreen}
+      options={{ headerShown: false }}
       />
       <Drawer.Screen
       name="Reset Account"
       component={ResetAccountScreen}
+      options={{ headerShown: false }}
       />
       <Drawer.Screen
       name="Select Currency"
       component={SelectCurrencyScreen}
+      options={{ headerShown: false }}
       />
 
     </Drawer.Navigator>
