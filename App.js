@@ -35,6 +35,12 @@ import ResetAccountScreen from "./src/screens/Settings/ResetAccountScreen";
 import SelectCurrencyScreen from "./src/screens/Settings/SelectCurrencyScreen";
 import ContactScreen from "./src/screens/Help/ContactScreen";
 
+import SelectTopUpWithdraw from "./src/screens/AddDeposit/SelectTopUpWithdraw";
+import CashMpesa from "./src/screens/AddDeposit/CashMpesa";
+import AddFunds from "./src/screens/AddDeposit/AddFunds";
+import ConfirmFunds from "./src/screens/AddDeposit/ConfirmFunds";
+import SendMpesa from "./src/screens/AddDeposit/SendMpesa";
+import Success from "./src/screens/AddDeposit/Success";
 
 const RootStack = createStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -74,12 +80,12 @@ const Home = () => {
       <Drawer.Screen
         name="Account Address"
         component={AccountAddress}
-        // options={{ headerShown: true }}
+        options={{ headerShown: false }}
       />
       <Drawer.Screen
         name="Pin"
         component={PinDoNotMatch}
-        // options={{ headerShown: false }}
+        options={{ headerShown: false }}
       />
       <Drawer.Screen
         name="Support"
@@ -102,7 +108,7 @@ const Home = () => {
       options={{ headerShown: false }}
       />
       <Drawer.Screen
-      name="Help Screen"
+      name="HelpScreen"
       component={HelpScreen}
       options={{ headerShown: false }}
       />
@@ -112,12 +118,12 @@ const Home = () => {
       options={{ headerShown: false }}
       />
       <Drawer.Screen
-      name="Reset Account"
+      name="ResetAccount"
       component={ResetAccountScreen}
       options={{ headerShown: false }}
       />
       <Drawer.Screen
-      name="Select Currency"
+      name="SelectCurrency"
       component={SelectCurrencyScreen}
       options={{ headerShown: false }}
       />
@@ -154,7 +160,7 @@ const App = () => {
     return (
       <NavigationContainer>
         <RootStack.Navigator screenOptions={{ headerShown: false }}>
-          <RootStack.Screen name="Landing" component={OnboardingScreen} />
+          <RootStack.Screen name="Landing" component={SettingsScreen} />
           <RootStack.Screen name="Signup">
             {(props) => <SignUpScreen {...props} onSignIn={handleSignIn} />}
           </RootStack.Screen>
@@ -165,6 +171,36 @@ const App = () => {
           <RootStack.Screen
             name="Home"
             component={Home}
+            options={{ headerShown: false }}
+          />
+          <RootStack.Screen
+            name="Select Top up Withdraw"
+            component={SelectTopUpWithdraw}
+            options={{ headerShown: false }}
+          />
+          <RootStack.Screen
+            name="Cash Mpesa"
+            component={CashMpesa}
+            options={{ headerShown: false }}
+          />
+          <RootStack.Screen
+            name="Add Funds"
+            component={AddFunds}
+            options={{ headerShown: false }}
+          />
+          <RootStack.Screen
+            name="Confirm Funds"
+            component={ConfirmFunds}
+            options={{ headerShown: false }}
+          />
+          <RootStack.Screen
+            name="Send Mpesa"
+            component={SendMpesa}
+            options={{ headerShown: false }}
+          />
+          <RootStack.Screen
+            name="Success"
+            component={Success}
             options={{ headerShown: false }}
           />
         </RootStack.Navigator>

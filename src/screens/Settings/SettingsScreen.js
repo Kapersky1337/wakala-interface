@@ -7,8 +7,6 @@ import Screen from '../../components/Screen';
 //config
 import { COLORS } from '../../consts/theme';
 
-//screens
-import SelectCurrencyScreen from "../Settings/SelectCurrencyScreen";
 
 function SettingsScreen(props) {
 
