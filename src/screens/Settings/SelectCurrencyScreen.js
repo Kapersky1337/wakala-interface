@@ -9,7 +9,7 @@ import RadioButtonRN from 'radio-buttons-react-native';
 import Screen from '../../components/Screen';
 
 //config
-import theme from '../../consts/theme';
+import theme, { COLORS } from '../../consts/theme';
 
 function SelectCurrencyScreen(props) {
 
@@ -93,7 +93,7 @@ function SelectCurrencyScreen(props) {
             <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: RFPercentage(4) }}>
 
                 {/* Back Icon */}
-                <Ionicons name="chevron-back" style={{ fontSize: RFPercentage(3.2), position: 'absolute', left: RFPercentage(2) }} color={theme.darkBlue} />
+                <Ionicons name="chevron-back" style={{ fontSize: RFPercentage(3.2), position: 'absolute', left: RFPercentage(2) }} color={COLORS.darkBlue} />
                 {/* Heading */}
                 <Text style={{ color: "#333333", fontSize: RFPercentage(2.5), fontFamily: 'Rubik_500Medium' }}>
                     Select Currency
@@ -102,25 +102,25 @@ function SelectCurrencyScreen(props) {
 
             <ScrollView style={{ flex: 1, width: '100%' }} >
                 <View style={{ justifyContent: 'center', alignItems: 'flex-start', width: '100%', marginTop: RFPercentage(1) }}>
-                    <View style={{ width: '100%', height: RFPercentage(0.1), backgroundColor: theme.line, marginTop: RFPercentage(3) }} />
+                    <View style={{ width: '100%', height: RFPercentage(0.1), backgroundColor: COLORS.line, marginTop: RFPercentage(3) }} />
 
                     {list.map((item, i) => (
                         <View key={i} style={{ alignItems: 'center', justifyContent: 'center', width: '100%' }}>
 
                             <View style={{ marginTop: RFPercentage(3), width: '80%', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', alignSelf: 'center' }}>
-                                <Text style={{ marginLeft: RFPercentage(2), color: theme.darkBlue, fontSize: RFPercentage(2.6), fontFamily: 'Rubik_400Regular' }}>
+                                <Text style={{ marginLeft: RFPercentage(2), color: COLORS.darkBlue, fontSize: RFPercentage(2.6), fontFamily: 'Rubik_400Regular' }}>
                                     {item.currencyText}
                                 </Text>
                                 <View style={{ marginLeft: RFPercentage(5) }}>
                                     <RadioButton
                                         value="first"
-                                        color={theme.primary}
+                                        color={COLORS.primary}
                                         status={item.enable}
                                         onPress={() => handleCurrency(i)}
                                     />
                                 </View>
                             </View>
-                            <View style={{ width: '100%', height: RFPercentage(0.1), backgroundColor: theme.line, marginTop: RFPercentage(3) }} />
+                            <View style={{ width: '100%', height: RFPercentage(0.1), backgroundColor: COLORS.line, marginTop: RFPercentage(3) }} />
                         </View>
 
                     ))}
